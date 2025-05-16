@@ -1,0 +1,29 @@
+<!-- filepath: c:\Users\panas\Downloads\Panashr-ScienceHub\profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Panashr ScienceHub</title>
+    <!-- MIT License applied for Panashr ScienceHub (2025) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Panashr ScienceHub</h1>
+    </header>
+    <main>
+        <section id="profile">
+            <h2>User Profile</h2>
+            <div class="mb-2"><strong>Email:</strong> ${user.email}</div>
+            <div class="mb-2"><strong>Provider:</strong> ${user.providerData[0].providerId}</div>
+            <div class="mb-2"><strong>Display Name:</strong> <span id="current-displayname">${user.displayName || ''}</span></div>
+            <div class="mb-2"><strong>Bio:</strong> <span id="current-bio">${data.bio || ''}</span></div>
+            <div class="mb-2"><strong>Location:</strong> <span id="current-location">${data.location || ''}</span></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Panashr ScienceHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
